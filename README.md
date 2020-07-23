@@ -1,2 +1,3 @@
-# pubMedBaby-v1.0
-大三艾课杯比赛——一个可爱的考研宝宝（可惜还不是太完善。。。。。）
+### pubMedBaby-v1.0
+
+AikeCup Competition - "a lovely baby" for the postgraduate entrance examination
