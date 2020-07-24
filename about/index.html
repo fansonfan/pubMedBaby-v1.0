@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans-CN">
+<!--应当遵循区域编号标准 https://tools.ietf.org/html/bcp47-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<meta name="description" content="关于考研宝宝的信息">
+<meta name="author" content="关于，考研宝宝，PubMed Baby">
+<title>考研宝宝 | 关于</title>
+
+<!-- Bootstrap core CSS -->
+<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!-- Main CSS -->
+<link rel="stylesheet" type="text/css" href="../main.css">
+</head>
+
+<body onload="startLoop()">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="index.html">考研宝宝</a> </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="../index.html">主页</a></li>
+        <li><a href="../institute.html">考研机构</a></li>
+        <li><a href="#">待定</a></li>
+        <li class="active"><a href="index.html">关于宝宝</a></li>
+      </ul>
+    </div>
+    <!--/.nav-collapse --> 
+  </div>
+</nav>
+<div id="jmb" class="lead text-center jumbotron"> <br>
+  <br>
+  <img src="../images/logo.png" alt="考研宝宝" height="100" width="100"/>
+  <h1>关于考研宝宝</h1>
+  <p>About PubMed Baby</p>
+</div>
+<div class="container">
+  <div class="starter-template text-center">
+    <h1>考研宝宝</h1>
+    <p class="lead">考研宝宝是...</p>
+    <p class="lead">考研宝宝又是，考研宝宝又是，考研宝宝又是，考研宝宝又是，考研宝宝又是，考研宝宝又是，考研宝宝又是，考研宝宝又是，考研宝宝又是，考研宝宝又是。</p>
+    <p class="lead">考研宝宝还是，考研宝宝还是，考研宝宝还是，考研宝宝还是，考研宝宝还是，考研宝宝还是，考研宝宝还是，考研宝宝还是，考研宝宝还是，考研宝宝还是。</p>
+  </div>
+  <br>
+  <div class="row lead text-center">
+    <div class="col-md-4">
+      <form action="../index.html">
+        <button type="submit" class="btn btn-secondary btn-lg"> 返回主页 <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> </button>
+      </form> 
+    </div>
+  </div>
+</div>
+<!-- /.container --> 
+
+<script>
+    i = 1;
+    function setBackground(){
+      i++;
+      if(i == 7) { i = 1;} //7张壁纸
+      newImage = 'url("../images/book' + i + '.jpg")';
+      document.getElementById('jmb').style.backgroundImage = newImage;
+    }
+
+    var iFrequency = 5000; // expressed in miliseconds
+    var myInterval = 0;
+
+    // STARTS and Resets the loop if any
+    function startLoop() {
+      if(myInterval > 0) clearInterval(myInterval);  // stop
+      myInterval = setInterval( "setBackground()", iFrequency );  // run
+    }
+    </script> 
+
+<!-- Bootstrap core JavaScript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script>window.jQuery || document.write('<script src="bootstrap/assets/js/vendor/jquery.min.js"><\/script>')</script> 
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
