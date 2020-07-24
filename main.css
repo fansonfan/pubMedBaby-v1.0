@@ -1,0 +1,52 @@
+.jumbotron {
+  color: white;
+  background-color: black;
+  background-image: url("city1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 400px;
+
+  -webkit-transition: background 300ms ease-in-out 2s; /* property duration timing-function delay */
+  -moz-transition: background 300ms ease-in-out 2s;
+  -o-transition: background 300ms ease-in-out 2s;
+  transition: background 300ms ease-in-out 2s;
+
+
+  -webkit-transition-property: background;
+  -webkit-transition-duration: 500ms;
+  -webkit-transition-timing-function: ease-in-out;
+  -webkit-transition-delay: 100ms;
+
+  -moz-transition-property: background;
+  -moz-transition-duration: 500ms;
+  -moz-transition-timing-function: ease-in-out;
+  -moz-transition-delay: 100ms;
+
+  -o-transition-property: background;
+  -o-transition-duration: 500ms;
+  -o-transition-timing-function: ease-in-out;
+  -o-transition-delay: 100ms;
+
+  transition-property: background;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+  transition-delay: 100ms;
+}
+
+.btn-lg {
+  background-color: #FFF;
+  border-width: 1px;
+  border-color: black;
+}
+
+.btn-lg:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+    transition: ease 0.5s;
+}
+
+.col-md-4 {
+  padding-bottom: 20px;
+}
